@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Артель | Ремонт и отделка</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='assets/css/main.css'>
+    <link rel='stylesheet' type='text/css' href='assets/css/modals.css'>
+    <link rel='stylesheet' type='text/css' href='assets/css/slider.css'>
+    <link rel='stylesheet' type='text/css' href='assets/css/main-mobile.css'>
+    <script src='assets/js/jquery-3.4.1.min.js'></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+</head>
+<body>
+    <section class="top-panel">
+        <section class="main-menu">
+            <section class="main-menu-wrapper">
+                <section class="menu-column mc1">
+                    <a href="#packages-anchor" class="menu-item">Предложения по пакетам</a>
+                    <a href="#gallery-anchor" class="menu-item">Дизайн интерьера</a>
+                    <a href="#additionally-anchor" class="menu-item">Дополнительные услуги</a>
+                    <a href="#stretch-ceiling-anchor" class="menu-item">Натяжные потолки</a>
+                    <a href="#furniture-design-anchor" class="menu-item">Проектирование и производство мебели</a>
+                </section>
+                <section class="menu-column mc2">
+                    <a href="#to-begin-anchor" class="menu-item">С чего начать ремонт квартиры</a>
+                    <a href="#warranty-anchor" class="menu-item">Что мы гарантируем</a>
+                    <a href="#portfolio-anchor" class="menu-item">Наши работы</a>
+                    <a href="#feedback-anchor" class="menu-item">Отзывы наших клиентов</a>
+                    <a href="#contact-anchor" class="menu-item">Контакты</a>
+                </section>
+                <section class="menu-column mc3">
+                    <section class="menu-social-wrapper">
+                        <img class="menu-social" src="assets/img/telegram-menu.png">
+                        <img class="menu-social" src="assets/img/whatsapp-menu.png">
+                        <img class="menu-social" src="assets/img/facebook-menu.png">
+                        <img class="menu-social" src="assets/img/instagram-menu.png">
+                    </section>
+                </section>
+                <img class="call-back-mobile-menu" src="assets/img/mobile-call-back-btn.png">
+            </section>
+        </section>
+        <section class="header-scroll">
+            <section class="header-scroll-wrapper">
+                <img class="scroll-logo" src="assets/img/scroll-logo.png">
+                <section class="scroll-menu-btns-wrapper">
+                    <a class="scroll-to-top-img" href="#content-anchor"></a>
+                    <section class="scroll-menu-img"></section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="bottom-scroll">
+        <section class="bottom-scroll-wrapper">
+            <p class="bottom-scroll-text"><b>Закажите обратный звонок</b> или позвоните <b>+38 (048) 709 33 43</b></p>
+            <p class="bottom-scroll-ask">Задать вопрос</p>
+        </section>
+    </section>
+    </section>
+    <section class="bottom-mobile-scroll">
+        <img class="bottom-mobile-img" src="assets/img/mobile-bottom-icon-1.png">
+        <img class="bottom-mobile-img" src="assets/img/mobile-bottom-icon-2.png">
+        <img class="bottom-mobile-call-back"src="assets/img/mobile-call-back-btn.png">
+    </section>
+    <section class="call-back-modal" style="display: none;">
+        <section class="call-back-modal-wrapper">
+            <img class="call-back-modal-exit" src="assets/img/close.png">
+            <h2 class="call-back-title">Заказать звонок</h2>
+            <p class="call-back-text">
+                <b>Оставьте свои контакты.</b><br> Мы перезвоним и ответим на все Ваши интересующие вопросы.
+            </p>
+                <section class="call-back-form">
+                    <label for="call-back-name">Имя</label>
+                    <input id="call-back-name" type="text" name="name">
+                    <label for="call-back-phone">Телефон</label>
+                    <input id="call-back-phone" type="text" name="phone">
+                    <button class="call-back-submit-btn" type="submit">Перезвоните мне</button>
+                </section>
+            <p class="personal-processing">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+            </p>
+        </section>
+    </section>
+    <!-- <section class="consultation-modal">
+        <section class="consultation-modal-wrapper">
+            <img class="consultation-modal-exit" src="assets/img/close.png">
+            <h2 class="consultation-title">Записаться на консультацию</h2>
+            <p class="consultation-text">
+                <b>Оставьте свои контакты.</b> Мы перезвоним и ответим на все Ваши интересующие вопросы.
+            </p>
+            <form class="consultation-form" action="" method="post" autocomplete="off">
+                <label for="consultation-name">Имя</label>
+                <input id="consultation-name" type="text" name="name">
+                <label for="consultation-phone">Телефон</label>
+                <input id="consultation-phone" type="text" name="name">
+                <button class="consultation-submit-btn" type="submit">Перезвоните мне</button>
+            </form>
+            <p class="personal-processing">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+            </p>
+        </section>
+    </section> -->    
+    <section class="presentation-modal" style="display: none;">
+        <section class="presentation-modal-wrapper">
+            <img class="presentation-modal-exit" src="assets/img/close.png">
+            <h2 class="presentation-title">Записаться на показ</h2>
+            <p class="presentation-text">
+                <b>Оставьте свои контакты.</b> Мы перезвоним и договоримся о встрече в удобное для вас время.
+            </p>
+            <section class="presentation-form">
+                <label for="presentation-name">Имя</label>
+                <input id="presentation-name" type="text" name="name">
+                <label for="presentation-phone">Телефон</label>
+                <input id="presentation-phone" type="text" name="name">
+                <button class="presentation-submit-btn" type="submit">Оставить заявку</button>
+            </section>
+            <p class="personal-processing">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+            </p>
+        </section>
+    </section>
+    <section class="ask-modal" style="display: none;">
+        <section class="ask-modal-wrapper">
+            <img class="ask-modal-exit" src="assets/img/close.png">
+            <h2 class="ask-title">Вопросы и ответы</h2>
+            <p class="ask-text">
+                <b>Вы можете задать нам любой вопрос по ремонту</b> наш эксперт
+                ответит Вам в ближайшее время.
+            </p>
+            <section class="ask-form">
+                <label for="ask-name">Имя</label>
+                <input id="ask-name" type="text" name="name">
+                <label for="ask-phone">Телефон</label>
+                <input id="ask-phone" type="text" name="phone">
+                <button class="ask-submit-btn" type="submit">Задать вопрос</button>
+            </section>
+            <p class="personal-processing">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+            </p>
+        </section>
+    </section>
+
+    <section class="package-modal social-modal" style="display: none;">
+        <section class="package-modal-content">
+            <img src="assets/img/close.png" class="package-modal-close social-modal-close">
+            <section class="package-header">
+                <img src="assets/img/social-package-modal.png" alt="Социальный пакет">
+                <section class="package-header-wrapper" id="social-package-wrapper">
+                    <p>Состав пакета</p>
+                    <h2>СОЦИАЛЬНЫЙ</h2>
+                </section>
+            </section>
+            <ul class="package-items pi-social">
+                <li class="package-item"><span>Подготовительные работы: временное электричество, вода</span></li>
+                <li class="package-item"><span>Штукатурка стен, откосов, заливка подоконика</span></li>
+                <li class="package-item"><span>Шпатлевка стен под обои</span></li>
+                <li class="package-item"><span>Проведение электромонтажных работ по всем помещениям 1 точка на 1м2</span></li>
+                <li class="package-item"><span>Монтаж распределительных электрощитов 2 шт</span></li>
+                <li class="package-item"><span>Монтаж трасс системы кондиционирования до 5 м/п</span></li>
+                <li class="package-item"><span>Монтаж трассы вентиляции до 3 м/п</span></li>
+                <li class="package-item"><span>Проведение сантехнических работ до 7 точек</span></li>
+                <li class="package-item"><span>Шумоизоляция сантехстояка</span></li>
+                <li class="package-item"><span>Плитка санузел и кухня рабочая стена до 3 м/п</span></li>
+                <li class="package-item"><span>Доставка материалов, вывоз мусора</span></li>
+            </ul>
+        </section>
+        <section class="package-call-back">
+            <section class="package-call-back-wrapper">
+                <p class="package-call-back-text">
+                    <b>Оставьте свой номер</b>, наш менеджер ответит на все ваши вопросы и сориентирует по стоимости.
+                </p>
+                <section class="package-call-back-form">
+                    <label for="package-call-back-name">Имя</label>
+                    <input id="package-call-back-name" class="social-call-back-name" type="text" name="name">
+                    <label for="package-call-back-phone">Телефон</label>
+                    <input id="package-call-back-phone" class="social-call-back-phone" type="text" name="phone-social">
+                    <button class="package-call-back-submit-btn social-call-back" type="submit">Оставить заявку</button>
+                </section>
+                <p class="package-personal-processing">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+                </p>
+            </section>
+        </section>        
+    </section>
+
+    <section class="package-modal family-modal" style="display: none;">
+        <section class="package-modal-content">
+            <img src="assets/img/close.png" class="package-modal-close family-modal-close">
+            <section class="package-header">
+                <img src="assets/img/family-package-modal.png" alt="Семейный пакет">
+                <section class="package-header-wrapper"  id="family-package-wrapper">
+                    <p>Состав пакета</p>
+                    <h2>СЕМЕЙНЫЙ</h2>
+                </section>
+            </section>
+            <ul class="package-items pi-family">
+                <li class="package-item"><span>Подготовительные работы: временное электричество, вода</span></li>
+                <li class="package-item"><span>Штукатурка стен, откосов, заливка подоконика</span></li>
+                <li class="package-item"><span>Проведение электромонтажных работ по всем помещениям 1 точка на 1 м2</span></li>
+                <li class="package-item"><span>Монтаж распределительных электрощитов 2 шт</span></li>
+                <li class="package-item"><span>Монтаж трасс системы кондиционирования до 5 м/п</span></li>
+                <li class="package-item"><span>Монтаж трассы вентиляции до 3 м/п</span></li>
+                <li class="package-item"><span>Проведение сантехнических работ до 8 точек</span></li>
+                <li class="package-item"><span>Шпатлёвка стен под обои</span></li>
+                <li class="package-item"><span>Шпаклевка откосов под покраску</span></li>
+                <li class="package-item"><span>Укладка плитки санузел, рабочая стенка кухни до 3 м/п, прихожая до 3 м2</span></li>
+                <li class="package-item"><span>Монтаж натяжного потолка</span></li>
+                <li class="package-item"><span>Покраска откосов</span></li>
+                <li class="package-item"><span>Поклейка обоев</span></li>
+                <li class="package-item"><span>Укладка ламината</span></li>
+                <li class="package-item"><span>Установка дверей</span></li>
+                <li class="package-item"><span>Монтаж плинтуса</span></li>
+                <li class="package-item"><span>Монтаж стыковочных порогов, уголков</span></li>
+                <li class="package-item"><span>Расключение щитов</span></li>
+                <li class="package-item"><span>Подключение розеток/выключателей</span></li>
+                <li class="package-item"><span>Подключение светильников, люстр, бра</span></li>
+                <li class="package-item"><span>Установка сантех приборов</span></li>
+                <li class="package-item"><span>Черновая уборка помещения</span></li>
+                <li class="package-item"><span>Доставка материалов</span></li>
+                <li class="package-item"><span>Подьем материала</span></li>
+                <li class="package-item"><span>Спуск мусора</span></li>
+                <li class="package-item"><span>Вывоз мусора</span></li>
+            </ul>
+        </section>
+        <section class="package-call-back">
+            <section class="package-call-back-wrapper">
+                <p class="package-call-back-text">
+                    <b>Оставьте свой номер</b>, наш менеджер ответит на все ваши вопросы и сориентирует по стоимости.
+                </p>
+                <section class="package-call-back-form">
+                    <label for="package-call-back-name">Имя</label>
+                    <input id="package-call-back-name" class="family-call-back-name" type="text" name="name">
+                    <label for="package-call-back-phone">Телефон</label>
+                    <input id="package-call-back-phone" class="family-call-back-phone" type="text" name="phone-family">
+                    <button class="package-call-back-submit-btn family-call-back" type="submit">Оставить заявку</button>
+                </section>
+                <p class="package-personal-processing">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+                </p>
+            </section>
+        </section>        
+    </section>
+
+    <section class="package-modal family-plus-modal" style="display: none;">
+        <section class="package-modal-content">
+            <img src="assets/img/close.png" class="package-modal-close family-plus-modal-close">
+            <section class="package-header">
+                <img src="assets/img/family-package-modal.png" alt="Семейный пакет">
+                <section class="package-header-wrapper" id="family-plus-package-wrapper">
+                    <p>Состав пакета</p>
+                    <h2>СЕМЕЙНЫЙ +</h2>
+                </section>
+                <h3>С отделочными материалами</h3>
+            </section>
+            <ul class="package-items pi-family-plus">
+                <li class="package-item"><span>Подготовительные работы : временное электричество, вода</span></li>
+                <li class="package-item"><span>Штукатурка стен, откосов, заливка подоконника</span></li>
+                <li class="package-item"><span>Проведение электромонтажных работ по всем помещениям 1 точка на 1 м2</span></li>
+                <li class="package-item"><span>Монтаж распределительных электрощитов 2 шт</span></li>
+                <li class="package-item"><span>Монтаж трасс системы кондиционирования до 5 м/п</span></li>
+                <li class="package-item"><span>Монтаж трассы вентиляции до 3 м/п</span></li>
+                <li class="package-item"><span>Проведение сантехнических работ до 8 точек</span></li>
+                <li class="package-item"><span>Шпатлёвка стен под обои</span></li>
+                <li class="package-item"><span>Шпаклевка откосов под покраску</span></li>
+                <li class="package-item"><span>Укладка плитки санузел, рабочая стенка кухни до 3 м/п, прихожая до 3 м2</span></li>
+                <li class="package-item"><span>Монтаж натяжного потолка</span></li>
+                <li class="package-item"><span>Покраска откосов</span></li>
+                <li class="package-item"><span>Поклейка обоев</span></li>
+                <li class="package-item"><span>Укладка ламината</span></li>
+                <li class="package-item"><span>Установка дверей</span></li>
+                <li class="package-item"><span>Монтаж плинтуса</span></li>
+                <li class="package-item"><span>Монтаж стыковочных порогов, уголков</span></li>
+                <li class="package-item"><span>Расключение щитов</span></li>
+                <li class="package-item"><span>Подключение розеток/выключателей</span></li>
+                <li class="package-item"><span>Подключение светильников, люстр, бра</span></li>
+                <li class="package-item"><span>Установка сантех приборов</span></li>
+                <li class="package-item"><span>Черновая уборка помещения</span></li>
+                <li class="package-item"><span>Доставка материалов</span></li>
+                <li class="package-item"><span>Подьем материала</span></li>
+                <li class="package-item"><span>Спуск мусора</span></li>
+                <li class="package-item"><span>Вывоз мусора</span></li>
+            </ul>
+        </section>
+        <section class="package-call-back">
+            <section class="package-call-back-wrapper">
+                <p class="package-call-back-text">
+                    <b>Оставьте свой номер</b>, наш менеджер ответит на все ваши вопросы и сориентирует по стоимости.
+                </p>
+                <section class="package-call-back-form">
+                    <label for="package-call-back-name">Имя</label>
+                    <input id="package-call-back-name" class="family-plus-call-back-name" type="text" name="name">
+                    <label for="package-call-back-phone">Телефон</label>
+                    <input id="package-call-back-phone" class="family-plus-call-back-phone" type="text" name="phone-family-plus">
+                    <button class="package-call-back-submit-btn family-plus-call-back" type="submit">Оставить заявку</button>
+                </section>
+                <p class="package-personal-processing">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и принимаете условия соглашения.
+                </p>
+            </section>
+        </section>        
+    </section>
+
+    <a class="anchor" id="content-anchor"></a>
+    <section class="content">
+        <section class="header">
+            <section class="logo">
+                <section class="logo-img"></section>
+            </section>
+            <section class="main-txt">
+                <h1>Ремонт и отделка</h1>
+                <h2>квартир, офисов и котеджей</h2>
+                <p>под ключ в Одессе и области</p>
+            </section>
+            <section class="menu">
+                <section class="call-back-mobile-img"></section>
+                <section class="menu-img"></section>
+            </section>
+        </section>
+        <section class="slide-1">
+            <section class="offer-slider-wrapper">
+                <div class="offer-slider">
+                    <div class="offer-item">
+                        <img src="assets/img/portfolio-9.png" alt="Первый слайд">
+                    </div>
+                
+                    <div class="offer-item">
+                        <img src="assets/img/portfolio-17.png" alt="Второй слайд">
+                    </div>
+                
+                    <div class="offer-item">
+                        <img src="assets/img/portfolio-18.PNG" alt="Третий слайд">
+                    </div>
+                    
+                    <div class="offer-item">
+                        <img src="assets/img/portfolio-19.PNG" alt="Четвертый слайд">
+                    </div>
+                    
+                    <div class="offer-item">
+                        <img src="assets/img/portfolio-20.PNG" alt="Пятый слайд">
+                    </div>
+                </div>       
+            </section>
+            <section class="main-offer">
+                <section class="call-back">
+                    <p class="phone-number">+38 (048) 709 33 43</p>
+                    <p class="call-back-btn">Заказать звонок</p>
+                </section>
+                <p class="offer-caption">ОТ МЕЧТЫ К РЕАЛЬНОСТИ</p>
+                <p class="offer-text">
+                    Консультации по ремонту<br>
+                    Дизайн интерьера<br>
+                    Натяжные потолки<br>
+                    Проектирование<br>
+                    и производство мебели
+                </p>     
+                <div class="offer-slider-dots">
+                    <span class="offer-slider-dots_item" onclick="currentOfferSlide(1)"></span> 
+                    <span class="offer-slider-dots_item" onclick="currentOfferSlide(2)"></span> 
+                    <span class="offer-slider-dots_item" onclick="currentOfferSlide(3)"></span> 
+                    <span class="offer-slider-dots_item" onclick="currentOfferSlide(4)"></span> 
+                    <span class="offer-slider-dots_item" onclick="currentOfferSlide(5)"></span> 
+                </div>
+            </section>
+        </section>
+        <section class="privileges">
+            <section class="privilege">
+                <img class="privilege-img" src="assets/img/privilege-1.png">
+                <h2 class="privilege-caption">Гарантия 5 лет</h2>
+                <p class="privilege-text">на все виды работ</p>
+            </section>
+            <section class="privilege">
+                <img class="privilege-img" src="assets/img/privilege-2.png">
+                <h2 class="privilege-caption">Точные сроки</h2>
+                <p class="privilege-text">сдача по графику</p>
+            </section>
+            <section class="privilege">
+                <img class="privilege-img" src="assets/img/privilege-3.png">
+                <h2 class="privilege-caption">Комплекс услуг</h2>
+                <p class="privilege-text">ремонт любой сложности</p>
+            </section>
+            <section class="privilege">
+                <img class="privilege-img" src="assets/img/privelege-4.png">
+                <h2 class="privilege-caption">Высокое качество</h2>
+                <p class="privilege-text">контроль и отчетность</p>
+            </section>
+        </section>
+        <a class="anchor" id="packages-anchor"></a>
+        <section class="packages-background"></section>
+        <section class="packages" id="packages">
+            <section class="package-main-txt">
+                <h2 class="packages-caption">Наши предложения по пакетам</h2>
+                <p>Узнайте, сколько будет стоить ремонт вашей квартиры</p>
+            </section>
+            <section class="packages-menu">
+                <section class="package">
+                    <img class="package-img" id="social-package-img" src="assets/img/social-package.png">
+                    <p class="package-name">«Социальный»</p>
+                    <p class="package-services">
+                        • Подготовительные работы:
+                        временное электричество, вода<br>
+                        • Штукатурка стен, откосов,
+                        заливка подоконика<br>
+                        • Шпатлевка стен под обои<br>
+                        • Проведение электромонтажных работ по всем помещениям
+                        1 точка на 1м2<br>
+                        • Монтаж распределительных электрощитов 2 шт<br>
+                        • Монтаж трасс системы кондиционирования до 5 м/п<br>
+                        • Монтаж трассы вентиляции
+                        до 3 м/п<br>
+                        • Проведение сантехнических работ до 7 точек<br>
+                        • Шумоизоляция сантехстояка<br>
+                    </p>
+                    <p class="package-see-more see-more-social">Полный список работ</p>
+                </section>
+                <section class="package">
+                    <img class="package-img" id="family-package-img" src="assets/img/family-package.png">
+                    <p class="top-sales">Топ продаж</p>
+                    <p class="package-name">
+                        «Семейный»
+                    </p>
+                    <p class="package-services">
+                        • Подготовительные работы:
+                        временное электричество, вода<br>
+                        • Штукатурка стен, откосов,
+                        заливка подоконника<br>
+                        • Проведение электромонтажных работ по всем помещениям 1 точка на 1 м2<br>
+                        • Монтаж распределительных электрощитов 2 шт<br>
+                        • Монтаж трасс системы кондиционирования до 5 м/п<br>
+                        • Монтаж трассы вентиляции
+                        до 3 м/п<br>
+                        • Проведение сантехнических работ до 8 точек<br>
+                        • Шпатлёвка стен под обои<br>
+                        <!-- • Шпаклевка откосов под покраску<br>
+                        • Укладка плитки санузел, рабочая стенка кухни до 3 м/п, прихожая до 3 м2<br>
+                        • Монтаж натяжного потолка<br>
+                        • Покраска откосов<br>
+                        • Поклейка обоев<br>
+                        • Укладка ламината<br>
+                        • Установка дверей<br>
+                        • Монаж плинтуса<br>
+                        • Монтаж стыковочных порогов, уголков<br>
+                        • Расключение щитов<br>
+                        • Подключение розеток/выключателей<br>
+                        • Подключение светильников, люстр, бра<br>
+                        • Установка сантех приборов<br>
+                        • Черновая уборка помещения<br>
+                        • Доставка материалов<br>
+                        • Подьем материала<br>
+                        • Спуск мусора<br>
+                        • Вывоз мусора<br> -->
+                        </p>
+                    <p class="package-see-more see-more-family">Полный список работ</p>
+                </section>
+                <section class="package">
+                    <img class="package-img" id="family-plus-package-img" src="assets/img/family_plus_package.png">
+                    <p class="package-name">«Семейный+»</p>
+                    <p class="package-with-materials">С отделочными материалами</p>
+                    <p class="package-services">
+                        • Подготовительные работы:
+                        временное электричество, вода<br>
+                        • Штукатурка стен, откосов,
+                        заливка подоконника<br>
+                        • Проведение электромонтажных работ по всем помещениям
+                        1 точка на 1 м2<br>
+                        • Монтаж распределительных электрощитов 2 шт<br>
+                        • Монтаж трасс системы
+                        кондиционирования до 5 м/п<br>
+                        • Монтаж трассы вентиляции
+                        до 3 м/п<br>
+                        • Проведение сантехнических работ до 8 точек<br>
+                        <!-- • Шпатлёвка стен под обои<br>
+                        • Шпаклевка откосов под покраску<br>
+                        • Укладка плитки санузел, рабочая стенка кухни до 3 м/п, прихожая до 3 м2<br>
+                        • Монтаж натяжного потолка<br>
+                        • Покраска откосов<br>
+                        • Поклейка обоев<br>
+                        • Укладка ламината<br>
+                        • Установка дверей<br>
+                        • Монаж плинтуса<br>
+                        • Монтаж стыковочных порогов, уголков<br>
+                        • Расключение щитов<br>
+                        • Подключение розеток/выключателей<br>
+                        • Подключение светильников, люстр, бра<br>
+                        • Установка сантех приборов<br>
+                        • Черновая уборка помещения<br>
+                        • Доставка материалов<br>
+                        • Подьем материала<br>
+                        • Спуск мусора<br>
+                        • Вывоз мусора<br> -->
+                        </p>
+                    <p class="package-see-more see-more-family-plus">Полный список работ</p>
+                </section>
+            </section>
+        </section>
+        <section class="quote-double-background"></section>
+        <section class="quote">
+            <section class="quote-background"></section>
+            <p>Мы не обещаем быстро <br>
+                мы гарантируем качество</p>
+        </section>
+        <section class="call-master-background"></section>
+        <section class="call-master">
+            <h2 class="call-master-title">Бесплатный вызов мастера</h2>
+            <section class="call-master-text-wrapper">
+                <img class="master-icon" src="assets/img/master.png">
+                <p class="call-master-text">
+                    Наш эксперт-инженер ответит на все Ваши вопросы. Проведет замер помещения, 
+                    подберет оптимальные решения по ремонту, предложит строительные  материалы
+                    которые прослужат вам долгое время.
+                </p>
+            </section>
+            <section class="call-master-form">
+                <input type="text" name="call-master" id="call-master-input" value="+38 (0--) -- -- ---">
+                <button type="submit" class="call-master-btn">Оставить заявку</button>
+            </section>
+        </section>
+        <a class="anchor" id="gallery-anchor"></a>
+        <section class="gallery" id="gallery">
+            <section class="gallery-text">
+                <h2>Ремонт квартиры по дизайн проекту</h2>
+                <p>Квартира будет выглядеть так, как вы хотите.<br>
+                    Любые идеи, материалы и цвета</p>
+            </section>
+            <div class="gallery-slider">
+                <div class="gallery-item">
+                    <img src="assets/img/visual-1.jpg" alt="Первый слайд">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="assets/img/visual-2.jpg" alt="Второй слайд">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="assets/img/visual-3.jpg" alt="Третий слайд">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/img/visual-4.png" alt="Четвертый слайд">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/img/visual-5.jpg" alt="Пятый слайд">
+                </div>
+            
+                <a class="gallery-prev" onclick="minusGallerySlide()"></a>
+                <a class="gallery-next" onclick="plusGallerySlide()"></a>
+            </div>            
+            <div class="gallery-slider-dots">
+                <span class="gallery-slider-dots_item" onclick="currentGallerySlide(1)"></span> 
+                <span class="gallery-slider-dots_item" onclick="currentGallerySlide(2)"></span> 
+                <span class="gallery-slider-dots_item" onclick="currentGallerySlide(3)"></span> 
+                <span class="gallery-slider-dots_item" onclick="currentGallerySlide(4)"></span> 
+                <span class="gallery-slider-dots_item" onclick="currentGallerySlide(5)"></span>
+            </div>
+        </section>
+        <section class="design-services">
+            <section class="design-service">
+                <section class="design-service-header">
+                    <img src="assets/img/design-service-1.png">
+                    <p class="design-service-caption">
+                        Индивидуальный<br>
+                        дизайн-проект
+                    </p>
+                </section>
+                <p class="design-service-text">
+                    Если Вы желаете точно знать, какой результат будет после ремонта, мы подготовим для вас полный дизайн-проект и 3D визуализацией.
+                </p>
+            </section>
+            <section class="design-service">
+                <section class="design-service-header">
+                    <img src="assets/img/design-service-2.png">
+                    <p class="design-service-caption">
+                        Авторский надзор
+                    </p>
+                </section>
+                <p class="design-service-text">
+                    Авторский надзор гарантирует Вам решение всех нюансов в ходе работы. Реализованный проект будет отвечать Вашей изначальной
+                    концепции и задачам.
+                </p>
+            </section>
+            <section class="design-service">
+                <section class="design-service-header">
+                    <img src="assets/img/design-service-3.png">
+                    <p class="design-service-caption">
+                        Дизайн-проект<br>
+                        ваших идей
+                    </p>
+                </section>
+                <p class="design-service-text">
+                    Создавайте вместе с нами проект Вашей мечты по готовым интерьерным решениям. Соберите коллаж из самых интересных идей, а мы воплотим их в жизнь. 
+                </p>
+            </section>
+            <section class="design-service">
+                <section class="design-service-header">
+                    <img src="assets/img/design-service-4.png">
+                    <p class="design-service-caption">
+                        Материалы для дизайна
+                    </p>
+                </section>
+                <p class="design-service-text">
+                    Наши дизайнеры помогут Вам в выборе
+                    отделочных материалов, осветительных
+                    приборах и в стильных аксессуарах.
+                </p>
+            </section>
+        </section>
+        <a class="anchor" id="additionally-anchor"></a>
+        <section class="additionally-background"></section>
+        <section class="additionally">
+            <section class="additionally-header">
+                <h2>Дополнительные услуги</h2>
+                <p>Итоговоя цена рассчитывается индивидуально - сумма напрямую<br>
+                    зависит от объема и сложности поставленных задач</p>
+            </section>
+            <section class="additionally-services">
+                <a class="anchor" id="stretch-ceiling-anchor"></a>
+                <section class="additionally-service" id="stretch-ceiling">
+                    <img src="assets/img/stretch-ceiling.png">
+                    <section class="additionally-service-panel asp1">
+                        <section class="add-ser-pan-text">
+                            <h3>Натяжные потолки</h3>
+                            <p>любой сложности </p>
+                        </section>
+                        <p class="additionally-see-more">
+                            Узнать подробнее
+                        </p>
+                    </section>
+                </section>
+                <a class="anchor" id="furniture-design-anchor"></a>
+                <section class="additionally-service" id="furniture-design">
+                    <section class="additionally-service-panel asp2">
+                        <section class="add-ser-pan-text">
+                            <h3>
+                                Проектирование<br>
+                                и производство<br>
+                                мебели
+                            </h3>
+                            <p>по индивидуальному проекту</p>
+                        </section>
+                        <p class="additionally-see-more">
+                            Узнать подробнее
+                        </p>
+                    </section>
+                    <img src="assets/img/furniture-design.png">
+                </section>
+            </section>
+        </section>
+        <section class="second-quote-double-background"></section>
+        <section class="second-quote">
+            <section class="quote-background"></section>
+            <section class="quote-background-2"></section>
+            <p>По желанию заказчика мы проводим<br>
+            видео и фото отчетность этапов работ</p> 
+        </section>
+        <a class="anchor" id="to-begin-anchor"></a>
+        <section class="to-begin-background"></section>
+        <section class="to-begin" id="to-begin">
+            <h2 class="to-begin-title">
+                Планируете ремонт?<br>
+                Не знаете с чего начать?
+            </h2>
+            <section class="to-begin-items">
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-1.png">
+                    <h3 class="to-begin-caption">Знакомство с нами</h3>
+                    <p class="to-begin-text">
+                        • Вы можете позвонить нам в офис или оставить заявку на сайте. Полную консультацию
+                        по ремонту возможно получить, у нас в офисе или у вас на обьекте.
+                    </p>
+                    <p class="to-begin-number">1</p>
+                </section>
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-2.png">
+                    <h3 class="to-begin-caption">Составление сметы</h3>
+                    <p class="to-begin-text">
+                        • Стоимость работ определяется по индивидуальному дизайн проектом. Также Вы можете
+                        выбрать один из 3х пакетов,
+                        которые предоставлены уже по
+                        фиксированной цене.
+                    </p>
+                    <p class="to-begin-number">2</p>
+                </section>
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-3.png">
+                    <h3 class="to-begin-caption tbc3">Заключение договора</h3>
+                    <p class="to-begin-text">
+                        • В договоре указан: срок
+                        выполняемой работы, цена на услуги, стоимость строительных материалов и предоставляется гарантия.
+                    </p>
+                    <p class="to-begin-number">3</p>
+                </section>
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-4.png">
+                    <h3 class="to-begin-caption">Покупка материалов</h3>
+                    <p class="to-begin-text">
+                        • Приобретение и доставка
+                        материалов выполняется
+                        нашей компанией, либо
+                        заказчиком.
+                    </p>
+                    <p class="to-begin-number">4</p>
+                </section>
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-5.png">
+                    <h3 class="to-begin-caption">Начало работ</h3>
+                    <p class="to-begin-text">
+                        • После согласования с
+                        заказчиком всех этапов работ,
+                        бригада рабочих приступает к их исполнению. На каждом этапе проводится технический надзор.
+                    </p>
+                    <p class="to-begin-number">5</p>
+                </section>
+                <section class="to-begin-item">
+                    <img class="to-begin-img" src="assets/img/to-begin-6.png">
+                    <h3 class="to-begin-caption">Окончание ремонта</h3>
+                    <p class="to-begin-text">
+                        • Заканчивая ремонт согласно договору Вы подписываете
+                        акт приема-передачи
+                        выполненных работ и получаете
+                        гарантийный сертификат 
+                        на 5 лет.
+                    </p>
+                    <p class="to-begin-number">6</p>
+                </section>
+            </section>
+        </section>
+        <a class="anchor" id="warranty-anchor"></a>
+        <section class="warranty" id="warranty">
+            <h2 class="warranty-caption">Что мы гарантируем</h2>
+            <section class="warranty-lists-wrapper">
+                <ul class="warranty-list">
+                    <li class="warranty-list-item">Консультации перед ремонтом</li>
+                    <li class="warranty-list-item">Персональный инженер-строитель</li>
+                    <li class="warranty-list-item">Индивидуальный дизайн-проект</li>
+                    <li class="warranty-list-item">Применяем проверенные технологии</li>
+                    <li class="warranty-list-item">Слаженная команда профессионалов</li>
+                    <li class="warranty-list-item">Удобная система оплаты</li>
+                </ul>
+                <ul class="warranty-list">
+                    <li class="warranty-list-item">Фиксированные сроки и стоимость</li>
+                    <li class="warranty-list-item">Контроль расходов</li>
+                    <li class="warranty-list-item">Комплексный подход</li>
+                    <li class="warranty-list-item">Чистота после ремонта</li>
+                    <li class="warranty-list-item">Гарантия 5 лет</li>
+                    <li class="warranty-list-item">Послегарантийное обслуживание</li>
+                </ul>
+            </section>
+        </section>
+        <a class="anchor" id="portfolio-anchor"></a>
+        <section class="portfolio-background"></section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="portfolio-title">Наши работы</h2>
+            <div class="portfolio-slider">
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-21.png" alt="Первый слайд">
+                </div>
+            
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-22.png" alt="Второй слайд">
+                </div>
+            
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-17.png" alt="Третий слайд">
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-19.PNG" alt="Четвертый слайд">
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-23.png" alt="Пятый слайд">
+                </div>
+            
+                <a class="portfolio-prev" onclick="minusPortfolioSlide()"></a>
+                <a class="portfolio-next" onclick="plusPortfolioSlide()"></a>
+            </div>            
+            <div class="portfolio-slider-dots">
+                <span class="portfolio-slider-dots_item" onclick="currentPortfolioSlide(1)"></span> 
+                <span class="portfolio-slider-dots_item" onclick="currentPortfolioSlide(2)"></span> 
+                <span class="portfolio-slider-dots_item" onclick="currentPortfolioSlide(3)"></span> 
+                <span class="portfolio-slider-dots_item" onclick="currentPortfolioSlide(4)"></span> 
+                <span class="portfolio-slider-dots_item" onclick="currentPortfolioSlide(5)"></span> 
+            </div>
+
+        </section>
+        <section class="viewing">
+            <h2 class="viewing-title">
+                По желанию заказчика возможен выезд на обьекты<br>
+                на разных стадиях ремонта
+            </h2>
+            <p class="viewing-text">
+                Предлагаем Вам встретиться на одном из наших обьектов, где вы сможете больше узнать<br>
+                о ремонте на реальных примерах а так же сможете убедиться в качестве наших работ.<br>
+                Запишитесь на просмотр по телефону <b>+38 048 709 33 43</b><br>
+                или заполните форму.
+            </p>
+            <p class="viewing-btn">
+                Записаться на просмотр
+            </p>
+        </section>
+        <a class="anchor" id="feedback-anchor"></a>
+        <section class="feedback-background"></section>
+        <section class="feedback" id="feedback">
+            <h2 class="feedback-caption">Отзывы наших клиентов</h2>
+            <section class="feedback-wrapper">
+                <div class="feedback-slider">
+                    <div class="feedback-item">
+                        <p class="feedback-title-mobile">
+                            Ремонт 2-х комнатной<br>
+                            квартиры по дизай-проекту
+                        </p>
+                        <section class="feedback-left">
+                            <img class="feedback-avatar" src="assets/img/feedback-author-photo-1.png">
+                            <p class="feedback-author">
+                                Ирина Анатолиевна
+                            </p>
+                            <p class="feedback-text">
+                                Выбирали компанию очень долго….но «Артель» сумел найти к нам подход с первых дней…
+                                Команда очень слаженная, работа качественная!!!! Прораб знающий свое дело как в своей работе так и в работе мастеров.Понравилось что на разные этапы приезжали разные специалисты, а не один и тот же «универсал» работал. Результатом очень довольна!!!)
+                            </p>
+                        </section>
+                        <section class="feedback-right">
+                            <h2 class="feedback-title">
+                                Ремонт 2-х комнатной<br>
+                                квартиры по дизай-проекту
+                            </h2>
+                            <img class="feedback-photo" src="assets/img/feedback-photo-1.png">
+                        </section>
+                    </div>
+                    <div class="feedback-item">
+                            <p class="feedback-title-mobile">
+                                Ремонт 2-х комнатной<br>
+                                квартиры по дизай-проекту
+                            </p>
+                        <section class="feedback-left">
+                            <img class="feedback-avatar" src="assets/img/feedback-author-photo-2.png">
+                            <p class="feedback-author">
+                                Вика и Костя
+                            </p>
+                            <p class="feedback-text">
+                                В компанию «Артель» обратились по рекомендации. Работают очень оперативно, сделали ремонт очень хорошо, в сроки и бюджет уложились. Все заботы по доставке материалов ребята взяли на себя, мы просто контролировали процесс и принимали работу по этапам.
+                            </p>
+                        </section>
+                        <section class="feedback-right">
+                            <h2 class="feedback-title">
+                                Ремонт 2-х комнатной<br>
+                                квартиры по дизай-проекту
+                            </h2>
+                            <img class="feedback-photo" src="assets/img/feedback-photo-2.png">
+                        </section>
+                    </div>
+                    <div class="feedback-item">
+                        <p class="feedback-title-mobile">
+                            Ремонт 2-х комнатной<br>
+                            квартиры по дизай-проекту
+                        </p>
+                        <section class="feedback-left">
+                            <img class="feedback-avatar" src="assets/img/feedback-author-photo-3.png">
+                            <p class="feedback-author">
+                                Снежанна Олеговна
+                            </p>
+                            <p class="feedback-text">
+                                Координаты компании «Артель» нашла в интернете. Встретились с прорабом Александром у меня дома, он показал себя как грамотный специалист.
+                                Рассказал как происходит ремонт и какие лучше выбрать материалы, в общем заключили договор). Ремонт и дизайн делали по фотографиям которые я нашла в интернете и результатом очень довольна.
+                            </p>
+                        </section>
+                        <section class="feedback-right">
+                            <h2 class="feedback-title">
+                                Ремонт 2-х комнатной<br>
+                                квартиры по дизай-проекту
+                            </h2>
+                            <img class="feedback-photo" src="assets/img/feedback-photo-3.png">
+                        </section>
+                    </div>
+                    <div class="feedback-item">
+                        <p class="feedback-title-mobile">
+                            Ремонт 2-х комнатной<br>
+                            квартиры по дизай-проекту
+                        </p>
+                        <section class="feedback-left">
+                            <img class="feedback-avatar" src="assets/img/feedback-author-photo-4.png">
+                            <p class="feedback-author">
+                                Владимир Петрович
+                            </p>
+                            <p class="feedback-text">
+                                Мы с женой впервые решили сделать ремонт своими силами. После того как пошел второй месяц ремонта, а конца его еще не видно, приняли решение что пускай занимаются ремонтом кто умеет это делать хорошо и быстро. «Артель» нашли в интернете, потом встретились в офисе. Качеством работы очень доволен. Ремонт прошел без нервов и мы переехали в свою новую квартиру уже через 3,5 месяца.
+                            </p>
+                        </section>
+                        <section class="feedback-right">
+                            <h2 class="feedback-title">
+                                Ремонт 2-х комнатной<br>
+                                квартиры по дизай-проекту
+                            </h2>
+                            <img class="feedback-photo" src="assets/img/feedback-photo-4.png">
+                        </section>
+                    </div>
+                                
+                    <a class="feedback-prev" onclick="minusFeedbackSlide()"></a>
+                    <a class="feedback-next" onclick="plusFeedbackSlide()"></a>
+                </div>
+            </section>
+            <div class="feedback-slider-dots">
+                <span class="feedback-slider-dots_item" onclick="currentFeedbackSlide(1)"></span> 
+                <span class="feedback-slider-dots_item" onclick="currentFeedbackSlide(2)"></span> 
+                <span class="feedback-slider-dots_item" onclick="currentFeedbackSlide(3)"></span> 
+                <span class="feedback-slider-dots_item" onclick="currentFeedbackSlide(4)"></span>
+            </div>
+        </section>
+        <a class="anchor" id="contact-anchor"></a>
+        <section class="contact" id="contact">
+            <img class="map" src="assets/img/map.png">
+            <section class="contact-info">
+                <h2 class="contact-title">Где мы находимся</h2>
+                <section class="adress">
+                    <img src="assets/img/location.png">
+                    <p>Большая Арнаутская 18</p>
+                </section>
+                <section class="mail">
+                    <img src="assets/img/mail.png">
+                    <p>artel.info.ua@gmail.com</p>
+                </section>
+                <section class="phones">
+                    <section class="phone tel1">
+                        <img src="assets/img/handset.png">
+                        <p>048 709 33 43</p>
+                    </section>
+                    <section class="phone tel2">
+                        <img src="assets/img/handset.png">
+                        <p>094 917 33 43</p>
+                    </section>
+                    <section class="phone tel3">
+                        <img src="assets/img/kyivstar.png">
+                        <p>098 211 32 84</p>
+                    </section>
+                    <section class="phone tel4">
+                        <img src="assets/img/vodaphone.png">
+                        <p>050 279 04 58</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="footer-background"></section>
+        <section class="footer">
+            <section class="footer-column foot-col-1">
+                <img class="footer-logo" src="assets/img/footer-logo.png">
+                <p class="shedule">
+                    Время работы: с 9.00 до 18.00<br>
+                    Понедельник - Пятница<br>
+                    Звонки принимаются с 9.00 до 20.00
+                </p>
+            </section>
+            <section class="footer-column foot-col-2">
+                <a href="#packages-anchor" class="footer-link">Предложения по пакетам</a>
+                <a href="#gallery-anchor" class="footer-link">Дизайн интерьера</a>
+                <a href="#additionally-anchor" class="footer-link">Дополнительные услуги</a>
+                <a href="#stretch-ceiling-anchor" class="footer-link">Натяжные потолки</a>
+                <a href="#furniture-design-anchor" class="footer-link">Проектирование и производство мебели</a>
+            </section>
+            <section class="footer-column foot-col-3">
+                <a href="#to-begin-anchor" class="footer-link">С чего начать ремонт квартиры</a>
+                <a href="#warranty-anchor" class="footer-link">Что мы гарантируем</a>
+                <a href="#portfolio-anchor" class="footer-link">Наши работы</a>
+                <a href="#feedback-anchor" class="footer-link">Отзывы наших клиентов</a>
+                <a href="#contact-anchor" class="footer-link">Контакты</a>
+            </section>
+            <section class="footer-column foot-col-4">
+                <p>
+                    Контакты<br>
+                    Большая Арнаутская 18<br>
+                    artel.info.ua@gmail.com
+                </p>
+                <section class="social">
+                    <img src="assets/img/telegram.png">
+                    <img src="assets/img/whatsapp.png">
+                    <img src="assets/img/facebook.png">
+                    <img src="assets/img/instagram.png">
+                </section>
+            </section>
+        </section>
+        <section class="copyright-background"></section>
+        <section class="copyright">
+            <p class="copyright-text">
+                2020 © «Артель». Использование материалов запрещено без письменного согласия
+            </p>
+        </section>
+    </section>
+    
+    <script src='assets/js/main.js'></script>    
+    <script src='assets/js/modals.js'></script>    
+    <script src='assets/js/slider.js'></script>    
+    <script src='assets/js/save.js'></script>    
+    <script src='assets/js/remove-add.js'></script>
+</body>
+</html>

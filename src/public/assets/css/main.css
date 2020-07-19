@@ -1,0 +1,1444 @@
+@font-face {
+    font-family: 'Cera Pro Regular';
+    src: url("../font/CeraPro-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Cera Pro Bold';
+    src: url("../font/CeraPro-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Cera Pro Light';
+    src: url("../font/CeraPro-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Cera Pro Medium';
+    src: url("../font/CeraPro-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Cera Pro Black';
+    src: url("../font/CeraPro-Black.ttf") format('truetype');
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    font-family: 'Cera Pro Regular';
+    position: relative;
+    width: 1920px;
+    transition: 1s;
+}
+
+.body-offset{
+    padding-top: 190px;
+}
+
+body *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 1140px;
+}
+
+.top-panel{
+    position: fixed;
+    top: -190px;
+    z-index: 10;
+    transition: 1s;
+    width: 1920px;
+}
+
+.show-menu{
+    top: 0;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+    background-color: #ecebeb;
+}
+
+.main-menu-wrapper{
+    height: 100%;
+    width: 1440px;
+    display: flex;
+    position: relative;
+}
+
+.call-back-mobile-menu{
+    display: none;
+}
+
+.menu-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: #404041;
+    font-size: 18px;
+}
+
+.menu-social{
+    margin-left: 50px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.mc1{
+    font-family: "Cera Pro Bold";
+    margin: 14px 0 0 147px;
+    letter-spacing: 0.76px;
+    line-height: 33px;
+}
+
+.mc2{
+    margin: 14px 45px 0 60px;
+    line-height: 33px;
+    letter-spacing: 0.76px;
+}
+
+.mc3{
+    margin-top: 40px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+}
+
+.menu-social-wrapper{
+    flex-direction: row;
+    display: flex;
+}
+
+.main-menu-close{
+    align-self: center;
+    cursor: pointer;
+    height: 24px;
+}
+
+.close-main-menu-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    width: 1140px;
+    height: 220px;
+    margin: 40px 0 20px 0;
+}
+
+.header-scroll{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    width: 100%;
+    height:  70px;
+    opacity: 0;
+    z-index: 3;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.header-scroll-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    align-items: center;
+}
+
+.scroll-logo{
+    width: 195px;
+}
+
+.header-scroll img{
+    align-self: center;
+}
+
+.scroll-menu-btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+}
+
+.scroll-to-top-img{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/arrow-up.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.scroll-menu-img{
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    background-image: url("../img/burger-menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-active{
+    background-image: url("../img/close.png");
+}
+
+.bottom-mobile-scroll{
+    display: none;
+}
+
+.bottom-scroll{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 55px;
+    opacity: 0;
+    z-index: 3;
+    padding: 0 104px;
+    transition: 1s;
+    pointer-events: none;
+    padding-top: 16px;
+}
+
+.bottom-scroll-wrapper{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-scroll-text{
+    color: #404041;
+    font-size: 18px;
+}
+
+.bottom-scroll-ask{
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.show-scroll{
+    opacity: 0.90;
+    pointer-events: all;
+}
+
+.logo-img{
+    align-self: center;
+    width: 219px;
+    height: 199px;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt *{
+    line-height: 1;
+}
+
+.main-txt{
+    margin-left: 68px;
+}
+
+.main-txt h1{
+    margin-top: 10px;
+    color: #de3d40;
+    font-size: 56px;
+    letter-spacing: 0.8px;
+    font-family: "Cera Pro Bold";
+    line-height: 1;
+}
+
+.main-txt h2{
+    margin-top: 6px;
+    color: #504d4d;
+    font-size: 34px;
+    line-height: 1;
+    font-family: "Cera Pro Bold";
+    text-align: right;
+    letter-spacing: 0.4px;
+}
+
+.main-txt p{
+    margin-top: 8px;
+    text-align: right;
+    width: 99%;
+    color: #7c7c80;
+    font-size: 18px;
+}
+
+.menu-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 32px;
+    height: 26px;
+    width: 26px;
+    background-image: url("../img/burger-menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.call-back-mobile-img{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: center;
+    cursor: pointer;
+    height: 26px;
+    width: 30px;
+    background-image: url("../img/headset-mobile-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-active{
+    background-image: url("../img/close.png");
+}
+
+.slide-1{
+    position: relative;
+    height: 510px;
+}
+
+.main-offer{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: right;
+}
+
+.privileges{
+    display: flex;
+    height: 272px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.privilege{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 50px;
+}
+
+.privilege-img{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.privilege-caption{
+    font-size: 27px;
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.privilege-text{
+    font-size: 18px;
+    color: #919396;
+    text-align: center;
+}
+
+.call-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 338px;
+    height: 75px;
+    color: #231f20;
+    background-image: url("../img/callback-border.png");
+    background-size: cover;
+}
+
+.phone-number{
+    margin-top: -18px;
+    color: #231f20;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+
+.call-back-btn{
+    height: 20px;
+    color: #231f20;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 52.24px;
+    text-decoration: underline;
+    letter-spacing: 0.04px;
+    cursor: pointer;
+}
+
+.offer-caption{
+    margin-top: 22px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: #a9cc39;
+    font-size: 30px;
+    font-family: "Cera Pro Bold";
+    line-height: 40.63px;
+    letter-spacing: 0.8px;
+    width: 430px;
+    height: 47px;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+.offer-text{
+    box-sizing: border-box;
+    padding: 14px 0 64px 38px;
+    width: 542px;
+    height: 289px;
+    color: #ffffff;
+    background-color: #a9cc39;
+    font-size: 35px;
+    font-family: "Cera Pro Bold";
+    line-height: 54px;
+    letter-spacing: 1.6px;
+}
+
+#oftxt3{
+    line-height: 0;
+}
+
+.offer-nav{
+    display: flex;
+    width: 66%;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.offer-scrol-btn{
+    margin-left: 7px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.packages{
+    height: 1084px;
+    position: relative;
+}
+
+.packages-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 1084px;
+    background: #504d4d;
+    z-index: -1;
+}
+
+.packages-caption{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    font-family: "Cera Pro Bold";
+    letter-spacing: 0.2px;
+    z-index: 1;
+}
+
+.package-main-txt{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.package-main-txt p{
+    color: #8f8f8f;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 7.06px;
+    text-align: center;
+}
+
+.packages-menu{
+    height: 802px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.package{
+    width: 360px;
+    background-color: #fff;
+    position: relative;
+}
+
+.package-name{
+    height: 29px;
+    margin-bottom: 30px;
+    color: #404041;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 49.73px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.package-img{
+    cursor: pointer;
+}
+
+.top-sales{
+    position: absolute;
+    right: 0;
+    top: 255px;
+    background-color: #de3d40;
+    width: 126px;
+    height: 25px;
+    color: white;
+    text-align: center;
+}
+
+.package-with-materials{
+    text-align: center;
+    color: #c3161c;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+
+.package-services{
+    margin: 0 15px;
+    height: 370px;
+    color: #919295;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.3px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-y: hidden;
+}
+
+.package-see-more{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+    background-color: #aacd39;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 59.89px;
+    text-align: center;
+    padding-top: 6px;
+    cursor: pointer;
+    font-family: "Cera Pro Light";
+}
+
+.package-see-more:hover{
+    font-family: "Cera Pro Bold";
+}
+
+.quote{
+    height: 264px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 57px;
+    height: 52px;
+    left: 250px;
+    top: 22px;
+    z-index: -1;
+    background-image: url("../img/quotes.png");
+    background-size: cover;
+}
+
+.quote p{
+    line-height: 62px;
+    color: #fff;
+    font-family: "Cera Pro Bold";
+    font-size: 45px;
+    margin-left: -60px;
+    margin-top: 16px;
+    letter-spacing: 0.9px;
+}
+
+.quote-double-background{
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 264px;
+    background: linear-gradient(180deg, rgba(80,77,77,1) 50%, rgba(236,235,235,1) 50%);
+    z-index: -3;
+}
+
+.quote-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1440px;
+    height: 264px;
+    left: -150px;
+    z-index: -2;
+    background-image: url("../img/quote-background.png");
+    background-size: cover;
+}
+
+.call-master-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 355px;
+    z-index: -3;
+    background-color: #ecebeb;
+    background-size: cover;
+}
+
+.call-master{
+    height: 355px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    width: 909px;   
+    margin: 0 auto;
+}
+
+.call-master-title{
+    font-size: 45px;
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    margin-bottom: 16px;
+}
+
+.call-master-text-wrapper{
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.master-icon{
+    align-self: center;
+    height: 75px;
+    margin-right: 31px;
+}
+
+.call-master-text{
+    color: #919396; 
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.call-master-form{
+    display: flex;
+}
+
+#call-master-input{
+    height: 57px;
+    width: 635px;
+    border: none;
+    outline: none;
+    font-size: 31px;
+    color: #000;
+    font-family: "Cera Pro Light";
+    padding-left: 30px;
+    letter-spacing: 3px;
+}
+
+.call-master-btn{
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #aacd39;
+    width: 310px;
+    font-size: 20px;
+    font-family: "Cera Pro Light";
+    cursor: pointer;
+}
+
+.call-master-btn:hover{
+    font-family: "Cera Pro Bold";
+}
+
+.gallery{
+    width: 100%;
+    margin-top: 58px;
+}
+
+.gallery-text h2{
+    color: #404041;
+    font-size: 45px;
+    font-family: "Cera Pro Bold";
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.gallery-text p{
+    margin: 10px 0 32px 0;
+    width: 100%;
+    color: #8f8f8f;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.gallery-scroll{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -7px;
+}
+
+.gallery-scroll-btn{
+    margin-left: 7px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.design-services{
+    padding: 0 0 0 20px;
+    margin-top: 90px;
+    height: 460px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 74px;
+}
+
+.design-service{
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-service-header{
+    display: flex;
+    align-items: flex-end;
+}
+
+.design-service-caption{
+    color: #404041;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Cera Pro Bold";
+    margin-left: 14px;
+    letter-spacing: 0.5px;
+}
+
+.design-service-text{
+    margin-top: 28px;
+    color: #919396;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.22px;
+}
+
+.additionally-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 1213px;
+    background: #ecebeb;
+    z-index: -1;
+}
+
+.additionally{
+    width: 100%;
+    height: 1213px;
+    position: relative;
+}
+
+.additionally-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 240px;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.additionally-header h2{
+    font-family: "Cera Pro Bold";
+    color: #404041;
+    font-size: 45px;
+    letter-spacing: 0.66px;
+}
+
+.additionally-header p{
+    color: #8f8f8f;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 14px;
+    padding-top: 6px;
+    letter-spacing: 0.33px;
+    line-height: 33px;
+}
+
+.additionally-services{
+    height: 866px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.additionally-service{
+    height: 401px;
+    width: 100%;
+    display: flex;
+}
+
+.additionally-service-panel{
+    background-color: #504d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.asp1{
+    padding: 110px 0 83px 0;
+}
+
+.asp1 h3{
+    margin-bottom: 10px;
+}
+
+.asp2{
+    padding: 78px 80px 83px 88px;
+}
+
+.add-ser-pan-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.add-ser-pan-text h3{
+    color: #ffffff;
+    font-family: "Cera Pro Bold";
+    font-size: 30px;
+    letter-spacing: 0.33px;
+    text-align: center;
+}
+
+.asp2 h3{
+    text-align: left;
+}
+
+.add-ser-pan-text p{
+    color: #8f8f8f;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    text-align: center;
+}
+
+.additionally-see-more{
+    color: #ffffff;
+    font-size: 20px;
+    width: 277px;
+    height: 57px;
+    background-color: #aacd39;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 14px;
+    font-family: "Cera Pro Light";
+}
+
+.additionally-see-more:hover{
+    font-family: "Cera Pro Bold";
+}
+
+.second-quote-double-background{
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 264px;
+    background: linear-gradient(180deg, rgba(236,235,235,1) 50%, rgba(80,77,77,1) 50%);
+    z-index: -3;
+}
+
+.second-quote{
+    height: 264px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.second-quote::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 41px;
+    left: 250px;
+    top: 22px;
+    z-index: -1;
+    background-image: url("../img/quotes.png");
+    background-size: cover;
+}
+
+.second-quote p{
+    font-size: 45px;
+    color: #ffffff;
+    font-family: "Cera Pro Bold";
+    margin-left: 210px;
+    margin-top: -10px;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+}
+
+.to-begin{
+    height: 1191px;
+    padding-top: 60px;
+}
+
+.to-begin-title{
+    color: #ffffff;
+    font-family: "Cera Pro Bold";
+    font-size: 45px;
+    margin-bottom: 47px;  
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+.to-begin-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 1191px;
+    background: #504d4d;
+    z-index: -1;
+}
+
+.to-begin-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 922px;
+}
+
+.to-begin-item{
+    display: flex;
+    flex-direction: column;
+    height: 446px;
+    width: 360px;
+    background-color: #fff;
+    padding: 54px 10px 0 20px;
+    position: relative;
+}
+
+.to-begin-img{
+    align-self: center;
+}
+
+.to-begin-caption{
+    text-align: center;
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 30px;
+    margin: 28px 0 16px 0;
+    /* letter-spacing: 1px; */
+}
+
+.to-begin-text{
+    color: #919396;
+    font-size: 20px;
+    line-height: 23px;
+    color: #919295;
+    letter-spacing: 0.5px;
+    letter-spacing: 0.22px;
+}
+
+.to-begin-number{
+    color: #aacd39;
+    font-family: "Cera Pro Bold";
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tbc3{
+    margin: 22px 0 16px 0;
+}
+
+.warranty{
+    height: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warranty-caption{
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 46px;
+    letter-spacing: 0.55px;
+    margin: 55px 0 40px 0;
+}
+
+.warranty-lists-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    padding-right: 20px;
+}
+
+.warranty-list{
+    list-style-image: url("../img/arrow-point.png");
+}
+
+.warranty-list-item{
+    color: #404041;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+.portfolio{
+    height: 728px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-title{
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 45px;
+    letter-spacing: 1.7px;
+    margin: 55px 0 32px 22px;
+    padding-right: 25px;
+}
+
+.portfolio-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-gallery-preview{
+    align-self: center;
+    margin: 0 25px;
+}
+
+.portfolio-gallery-arrow{
+    align-self: center;
+}
+
+.portfolio-gallery-scroll{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -7px;
+}
+
+
+.portfolio-gallery-scroll-btn{
+    margin-left: 7px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.portfolio-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 728px;
+    background: #ecebeb;
+    z-index: -1;
+}
+
+.viewing{
+    height: 428px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewing-title{
+    text-align: center;
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 30px;
+    line-height: 33px;
+    margin: 54px 0 26px 0;
+    letter-spacing: 0.2px;
+}
+
+.viewing-text{
+    text-align: center;
+    color: #8f8f8f;
+    font-size: 20px;
+    letter-spacing: 0.76px;
+    margin-bottom: 54px;
+    line-height: 23px;
+}
+
+.viewing-btn{
+    color: #ffffff;
+    font-size: 26px;
+    text-align: center;
+    width: 361px;
+    height: 57px;
+    background-color: #aacd39;
+    padding-top: 10px;
+    font-family: "Cera Pro Light";
+    cursor: pointer;
+}
+
+.viewing-btn:hover{
+    font-family: "Cera Pro Bold";
+}
+
+.feedback-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 775px;
+    background: #504d4d;
+    z-index: -1;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.feedback-wrapper{
+    height: 584px;
+}
+
+.feedback-caption{
+    color: #fff;
+    font-family: "Cera Pro Bold";
+    font-size: 45px;
+    letter-spacing: 1.7px;
+    text-align: center;
+}
+
+.feedback-item{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.feedback-title-mobile{
+    display: none;
+}
+
+.feedback-title{
+    color: #ffffff;
+    font-family: "Cera Pro Bold";
+    font-size: 29px;
+    line-height: 32px;
+    background-color: #aacd39;
+    height: 90px;
+    padding: 10px 0 0 24px;
+}
+
+.feedback-left{
+    width: 405px;
+    background-color: #fff;
+    padding: 20px 5px 0 25px;
+    margin-left: 25px;
+    height: 100%;
+}
+
+.feedback-arrow{
+    align-self: center;
+    filter: invert();
+}
+
+.feedback-text{
+    color: #8f8f8f;
+    font-size: 20px;
+    letter-spacing: 0.76px;
+    line-height: 23px;
+    margin-top: 17px;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.feedback-author{
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 20px;
+    letter-spacing: 0.76px;
+    margin-top: 23px;
+}
+
+.feedback-right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.contact{
+    margin-top: 49px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 674px;
+    position: relative;
+}
+
+.map{
+    position: absolute;
+    left: -410px;
+}
+
+.contact-info{
+    width: 420px;
+    height: 360px;
+    padding-top: 90px;
+}
+
+.contact-title{
+    color: #404041;
+    font-family: "Cera Pro Bold";
+    font-size: 45px;
+    line-height: 1;
+    margin-top: -8px;
+    margin-bottom: 32px;
+}
+
+.adress, .mail{
+    display: flex;
+    color: #404041;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.93px;
+    line-height: 1;
+    margin-bottom: 13px;
+}
+
+.adress img, .mail img{
+    margin-right: 32px;
+    align-self: center;
+}
+
+.phones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.phone{
+    display: flex;
+    color: #a9cc39;
+    font-size: 45px;
+    font-family: "Cera Pro Bold";
+    line-height: 1;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.tel1{
+    letter-spacing: 1.5px;
+}
+
+.tel2{
+    letter-spacing: 2.5px;
+}
+
+.tel3{
+    letter-spacing: 2.4px;
+}
+
+.tel4{
+    letter-spacing: 1px;
+}
+
+.phone img{
+    align-self: center;
+    margin-right: 30px;
+}
+
+.footer-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 262px;
+    background: #504d4d;
+    z-index: -1;
+}
+
+.footer{
+    width: 100%;
+    height: 262px;
+    display: flex;
+}
+
+.footer-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    align-self: center;
+    margin-bottom: 38px;
+}
+
+.shedule{
+    color: #757575;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.foot-col-1{
+    padding-top: 64px;
+}
+
+.foot-col-2{
+    color: #ecebeb;
+    font-size: 15px;
+    padding: 54px 0 0 70px;
+    line-height: 2.7;
+}
+
+.foot-col-3{
+    color: #ecebeb;
+    font-size: 15px;
+    padding: 54px 0 0 63px;
+    line-height: 2.1;
+}
+
+.foot-col-4{
+    color: #ecebeb;
+    font-size: 15px;
+    padding: 54px 0 0 63px;
+    line-height: 2;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #ecebeb;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 177px;
+}
+
+.social img{
+    align-self: center;
+    cursor: pointer;
+}
+
+.copyright-background{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 69px;
+    background: #2b2525;
+    z-index: -1;
+    border-top: 1px solid #404041;
+}
+
+.copyright{
+    height: 69px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.copyright-text{
+    color: #959393;
+    font-size: 12px;
+}
+
+body{
+    justify-content: center;
+}
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
