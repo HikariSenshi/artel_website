@@ -79,6 +79,10 @@ body *{
     display: none;
 }
 
+.bottom-mobile-go-top{
+    display: none;
+}
+
 .menu-column{
     display: flex;
     flex-direction: column;

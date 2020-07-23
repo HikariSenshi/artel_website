@@ -11,7 +11,6 @@
     <link rel='stylesheet' type='text/css' href='assets/css/main-mobile.css'>
     <script src='assets/js/jquery-3.4.1.min.js'></script>
     <script src="assets/js/jquery.maskedinput.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 <body>
@@ -63,7 +62,8 @@
     <section class="bottom-mobile-scroll">
         <img class="bottom-mobile-img" src="assets/img/mobile-bottom-icon-1.png">
         <img class="bottom-mobile-img" src="assets/img/mobile-bottom-icon-2.png">
-        <img class="bottom-mobile-call-back"src="assets/img/mobile-call-back-btn.png">
+        <a href="#content-anchor"><img class="bottom-mobile-go-top" src="assets/img/arrow-up.png"></a>
+        <img class="bottom-mobile-call-back" src="assets/img/mobile-call-back-btn.png">
     </section>
     <section class="call-back-modal" style="display: none;">
         <section class="call-back-modal-wrapper">
@@ -320,7 +320,30 @@
             </section>
         </section>
         <section class="slide-1">
-            <section class="offer-slider-wrapper">
+            <div class="offer-slider">
+                <div class="offer-slider__wrapper">
+                    <div class="offer-slider__items">
+                        <div class="offer-slider__item">
+                            <img src="assets/img/portfolio-9.png" alt="Первый слайд">
+                        </div>
+                        <div class="offer-slider__item">
+                            <img src="assets/img/portfolio-17.png" alt="Второй слайд">
+                        </div>
+                        <div class="offer-slider__item">
+                            <img src="assets/img/portfolio-18.PNG" alt="Третий слайд">
+                        </div>
+                        <div class="offer-slider__item">
+                            <img src="assets/img/portfolio-19.PNG" alt="Четвертый слайд">
+                        </div>
+                        <div class="offer-slider__item">
+                            <img src="assets/img/portfolio-20.PNG" alt="Пятый слайд">
+                        </div>
+                    </div>
+                </div>
+                <a class="offer-slider__control offer-slider__control_prev" href="#" role="button"></a>
+                <a class="offer-slider__control offer-slider__control_next offer-slider__control_show" href="#" role="button"></a>
+            </div>
+            <!-- <section class="offer-slider-wrapper">
                 <div class="offer-slider">
                     <div class="offer-item">
                         <img src="assets/img/portfolio-9.png" alt="Первый слайд">
@@ -342,7 +365,7 @@
                         <img src="assets/img/portfolio-20.PNG" alt="Пятый слайд">
                     </div>
                 </div>       
-            </section>
+            </section> -->
             <section class="main-offer">
                 <section class="call-back">
                     <p class="phone-number">+38 (048) 709 33 43</p>
@@ -991,7 +1014,13 @@
     <script src='assets/js/main.js'></script>    
     <script src='assets/js/modals.js'></script>    
     <script src='assets/js/slider.js'></script>    
+    <script src='assets/js/offer-slider.js'></script>    
     <script src='assets/js/save.js'></script>    
     <script src='assets/js/remove-add.js'></script>
+    <script>
+        slideShow('.offer-slider', {
+          isAutoplay: true
+        });
+    </script>
 </body>
 </html>

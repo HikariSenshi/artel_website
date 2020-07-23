@@ -82,45 +82,45 @@ function showPortfolioSlides(n) {
 
 
 
-/* Индекс слайда по умолчанию */
-var slideOfferIndex = 1;
-showOfferSlides(slideOfferIndex);
+// /* Индекс слайда по умолчанию */
+// var slideOfferIndex = 1;
+// showOfferSlides(slideOfferIndex);
 
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
-function plusOfferSlide() {
-    showOfferSlides(slideOfferIndex += 1);
-}
+// /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+// function plusOfferSlide() {
+//     showOfferSlides(slideOfferIndex += 1);
+// }
 
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-function minusOfferSlide() {
-    showOfferSlides(slideOfferIndex -= 1);  
-}
+// /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+// function minusOfferSlide() {
+//     showOfferSlides(slideOfferIndex -= 1);  
+// }
 
-/* Устанавливает текущий слайд */
-function currentOfferSlide(n) {
-    showOfferSlides(slideOfferIndex = n);
-}
+// /* Устанавливает текущий слайд */
+// function currentOfferSlide(n) {
+//     showOfferSlides(slideOfferIndex = n);
+// }
 
-/* Основная функция слайдера */
-function showOfferSlides(n) {
-    var i;
-    var offerSlides = document.getElementsByClassName("offer-item");
-    var offerDots = document.getElementsByClassName("offer-slider-dots_item");
-    if (n > offerSlides.length) {
-      slideOfferIndex = 1
-    }
-    if (n < 1) {
-        slideOfferIndex = offerSlides.length
-    }
-    for (i = 0; i < offerSlides.length; i++) {
-        offerSlides[i].style.display = "none";
-    }
-    for (i = 0; i < offerDots.length; i++) {
-        offerDots[i].className = offerDots[i].className.replace(" active-dot", "");
-    }
-    offerSlides[slideOfferIndex - 1].style.display = "block";
-    offerDots[slideOfferIndex - 1].className += " active-dot";
-}
+// /* Основная функция слайдера */
+// function showOfferSlides(n) {
+//     var i;
+//     var offerSlides = document.getElementsByClassName("offer-item");
+//     var offerDots = document.getElementsByClassName("offer-slider-dots_item");
+//     if (n > offerSlides.length) {
+//       slideOfferIndex = 1
+//     }
+//     if (n < 1) {
+//         slideOfferIndex = offerSlides.length
+//     }
+//     for (i = 0; i < offerSlides.length; i++) {
+//         offerSlides[i].style.display = "none";
+//     }
+//     for (i = 0; i < offerDots.length; i++) {
+//         offerDots[i].className = offerDots[i].className.replace(" active-dot", "");
+//     }
+//     offerSlides[slideOfferIndex - 1].style.display = "block";
+//     offerDots[slideOfferIndex - 1].className += " active-dot";
+// }
 
 
 
@@ -165,7 +165,7 @@ function showFeedbackSlides(n) {
 }
 
 
-let timerOffer = setInterval(() => plusOfferSlide(), 5000);
+// let timerOffer = setInterval(() => plusOfferSlide(), 5000);
 let timerGallery = setInterval(() => plusGallerySlide(), 5000);
 let timerPortfolio = setInterval(() => plusPortfolioSlide(), 5000);
 // let timerFeedback = setInterval(() => plusFeedbackSlide(), 3000);
